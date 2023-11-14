@@ -11,4 +11,4 @@ import os
 path = os.path.dirname(__file__)
 # f"{path}/test_case/test_login.py::Test_login"
 if __name__ == "__main__":
-	pytest.main(['--alluredir=./report/xml', "-m para"])
+	pytest.main(['--alluredir=./report/xml'])
