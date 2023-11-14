@@ -1,0 +1,12 @@
+-
+  name: 查询from表单数据
+  url: form
+  method: POST
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+  data:
+    name: $name
+    age: 20
+  valid:
+    msg: "查询成功"
+    age: "20"

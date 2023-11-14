@@ -1,0 +1,11 @@
+-
+  name: 登录成功
+  url: login
+  method: POST
+  headers:
+    Content-Type: application/json
+  data:
+    username: $username
+    password: $password
+  msg: "用户$username登录成功"
+

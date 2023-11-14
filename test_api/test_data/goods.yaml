@@ -1,0 +1,10 @@
+-
+  name: 评论成功
+  url: query/goods
+  method: POST
+  headers:
+    Content-Type: application/json
+  data:
+    uid: $uid
+    goods: 手机
+  msg: "查询成功, 手机价格为2000元"
