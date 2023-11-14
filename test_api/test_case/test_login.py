@@ -11,12 +11,16 @@ import pytest
 from test_api.common.requestation import RequestUtil
 from test_api.common.getYaml import GetYaml
 from test_api.common.getConfig import GetConfig
+from test_api.common.generatedData import GeneratedData
 from test_api.common.cryptData import MD5_encode
 
 path = GetConfig().get_url("test")
 # md5加密测试接口
-username = MD5_encode("admin")
-password = MD5_encode("admin123")
+# username = MD5_encode("admin")
+# password = MD5_encode("admin123")
+# 随机生成账号密码
+username = GeneratedData().generatedName()
+password = GeneratedData().generatedRandomNumber(8)
 
 
 @allure.feature("登录查询form表单")
