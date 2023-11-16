@@ -1,0 +1,5 @@
+INFO     日志输出:log.py:38 请求接口地址==============>http://127.0.0.1:5000/login
+INFO     日志输出:log.py:38 请求接口的请求方式=============>POST
+INFO     日志输出:log.py:38 请求接口的请求头==============>{'Content-Type': 'application/json'}
+INFO     日志输出:log.py:38 请求接口的请求参数==============>{'username': '孙淑英', 'password': '99358449'}
+INFO     日志输出:log.py:38 请求接口的响应==============>{'msg': '用户孙淑英登录成功', 'uid': '123456', 'username': '孙淑英'}

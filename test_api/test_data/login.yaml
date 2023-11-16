@@ -1,11 +1,23 @@
--
-  name: 登录成功
-  url: login
-  method: POST
-  headers:
-    Content-Type: application/json
-  data:
-    username: $username
-    password: $password
-  msg: "用户$username登录成功"
+- test_login_01:
+   url: login
+   method: POST
+   headers:
+     Content-Type: application/json
+   data:
+     username: "$username"
+     password: "$password"
+   valid:
+     msg: "用户$username登录成功"
+     uid: "123456"
+     username: "$username"
+
+- test_login_02:
+   url: login
+   method: POST
+   headers:
+     Content-Type: application/json
+   data:
+     username: ""
+     password: "$password"
+   valid: 账号或密码错误
 

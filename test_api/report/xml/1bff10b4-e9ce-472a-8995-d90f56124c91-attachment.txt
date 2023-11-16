@@ -1,1 +1,0 @@
-INFO     日志输出:requestation.py:34 请求成功,请求地址为http://127.0.0.1:5000/login,请求参数为{'username': '21232F297A57A5A743894A0E4A801FC3', 'password': '0192023A7BBD73250516F069DF18B500'},响应为{'msg': '用户21232F297A57A5A743894A0E4A801FC3登录成功', 'uid': '123456', 'username': '21232F297A57A5A743894A0E4A801FC3'}

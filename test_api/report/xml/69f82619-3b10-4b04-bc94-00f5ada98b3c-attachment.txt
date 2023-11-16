@@ -1,0 +1,5 @@
+INFO     日志输出:log.py:38 请求接口地址==============>http://127.0.0.1:5000/form
+INFO     日志输出:log.py:38 请求接口的请求方式=============>POST
+INFO     日志输出:log.py:38 请求接口的请求头==============>{'Content-Type': 'application/x-www-form-urlencoded'}
+INFO     日志输出:log.py:38 请求接口的请求参数==============>{'name': '孙淑英', 'age': 20}
+INFO     日志输出:log.py:38 请求接口的响应==============>{'age': '20', 'msg': '查询成功', 'name': '孙淑英'}
