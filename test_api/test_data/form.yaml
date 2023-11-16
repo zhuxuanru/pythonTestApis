@@ -9,4 +9,5 @@
     age: 20
   valid:
     msg: "查询成功"
+    name: $name
     age: "20"

@@ -7,4 +7,5 @@
   data:
     uid: $uid
     goods: 手机
-  msg: "查询成功, 手机价格为2000元"
+  valid:
+    msg: "查询成功, 手机价格为2000元"

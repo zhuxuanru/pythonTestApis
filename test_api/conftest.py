@@ -6,7 +6,7 @@
 ======================
 """
 import pytest
-from common.getYaml import GetYaml
+from common.get_yaml import GetYaml
 import os
 import sys
 

@@ -9,7 +9,7 @@
 # 导入pymysql
 import logging
 import pymysql
-from test_api.common.getConfig import GetConfig
+from test_api.common.get_config import GetConfig
 
 
 class DbOperation:
