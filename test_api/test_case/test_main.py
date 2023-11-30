@@ -43,7 +43,7 @@ class Test_main:
 	@pytest.mark.run(order=1)
 	# 参数化，请求参数，方法，地址从login.yaml文件里取
 	@pytest.mark.parametrize("testcase_list", [getYamlLogin.read_main_yaml(username=username, password=password)])
-	def test_login(self, clear_yamlFile, testcase_list):
+	def test_login(self, log_main, clear_yamlFile, testcase_list):
 		testcase = testcase_list["test_login_01"]
 		url = path + testcase["url"]
 		response = request.all_request(url, testcase["method"], testcase['headers'], request_data=testcase["data"])

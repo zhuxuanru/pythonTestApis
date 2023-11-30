@@ -23,12 +23,12 @@ class GetYaml:
 			load_content = yaml.safe_load(content)
 			# 接口关联标志，如果为true则直接返回yaml文件内容
 			if link:
-				self.getYamlLog.info_log(f"=======接口关联,获取all.yaml文件的关联参数{load_content}=======")
+				self.getYamlLog.info_log(f"-------接口关联,获取all.yaml文件的关联参数{load_content}-------")
 				return load_content
 			else:
 				# 如果kwargs为true，替换成yaml文件里的占位符$
 				if kwargs:
-					self.getYamlLog.info_log(f"===========替换动态参数===========")
+					self.getYamlLog.info_log(f"--------替换动态参数--------")
 					self.getYamlLog.info_log(f"替换参数为{kwargs}")
 					return yaml.safe_load(Template(str(load_content[0])).safe_substitute(kwargs))
 				else:
@@ -59,4 +59,4 @@ class GetYaml:
 			content.truncate()
 
 
-# print(GetYaml("login.yaml").read_yaml(testcase_name="test_login_02", password="2222"))
+# print(GetYaml("xiaodi_home.yaml").read_main_yaml())

@@ -30,6 +30,7 @@ class GetConfig:
 				database_dict[key] = value
 		return database_dict
 
+	# 获取测试环境地址
 	def get_url(self, name):
 		return self.cf.get("url", name)
 

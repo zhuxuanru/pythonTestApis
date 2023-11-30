@@ -28,7 +28,7 @@ class DbOperation:
 		except pymysql.Error as error:
 			logging.error(error)
 
-	# 执行sql
+	# 执行sql（包含插入，删除，修改）
 	def exe_data(self, sql):
 		try:
 			self.cursor.execute(sql)

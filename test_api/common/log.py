@@ -53,4 +53,3 @@ class Log:
 
 	def error_log(self, message):
 		self.logger.error(message)
-
